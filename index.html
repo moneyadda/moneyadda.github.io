@@ -1,54 +1,426 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Moneyadda</title>
+    <style type="text/css">
+html {
+  color: black;
+  background: #ffffcc none repeat scroll 0% 0%;
 }
 
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 30px;
-
-.left {
-  width: 20%;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0px;
+  padding: 0px;
 }
 
-.right {
-  width: 60%;
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
 }
 
-/* Clear floats after the columns */
-.row:after {
+fieldset, img {
+  border: 0px none;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style: outside none none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q::before, q::after {
   content: "";
-  display: table;
+}
+
+abbr, acronym {
+  border: 0px none;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+}
+
+input, textarea, select {
+}
+
+legend {
+  color: black;
+}
+
+del, ins {
+  text-decoration: none;
+}
+
+body {
+  font: 13px / 1.231 arial helvetica clean sans-serif;
+}
+
+select, input, button, textarea {
+  font: 99% arial helvetica clean sans-serif;
+}
+
+table {
+}
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  line-height: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: #ffffcc;
+  color: black;
+}
+
+#ft {
   clear: both;
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+
+#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {
+  margin: auto;
+  text-align: left;
+  width: 57.69em;
+  min-width: 750px;
 }
-</style>
-</head>
-<body>
-<center>
-<h2>MoneyAdda</h2>
 
-<div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column right" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
+#doc2 {
+  width: 73.076em;
+}
 
-</body>
+#doc3 {
+  margin: auto 10px;
+  width: auto;
+}
+
+#doc4 {
+  width: 74.923em;
+}
+
+.yui-b {
+  position: relative;
+}
+
+.yui-b {
+}
+
+#yui-main .yui-b {
+  position: static;
+}
+
+#yui-main, .yui-g .yui-u .yui-g {
+  width: 100%;
+}
+
+.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {
+  float: right;
+  margin-left: -25em;
+}
+
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
+  float: left;
+  margin-right: -25em;
+}
+
+.yui-t1 .yui-b {
+  float: left;
+  width: 12.3077em;
+}
+
+.yui-t1 #yui-main .yui-b {
+  margin-left: 13.3077em;
+}
+
+.yui-t2 .yui-b {
+  float: left;
+  width: 13.8461em;
+}
+
+.yui-t2 #yui-main .yui-b {
+  margin-left: 14.8461em;
+}
+
+.yui-t3 .yui-b {
+  float: left;
+  width: 23.0769em;
+}
+
+.yui-t3 #yui-main .yui-b {
+  margin-left: 24.0769em;
+}
+
+.yui-t4 .yui-b {
+  float: right;
+  width: 13.8456em;
+}
+
+.yui-t4 #yui-main .yui-b {
+  margin-right: 14.8456em;
+}
+
+.yui-t5 .yui-b {
+  float: right;
+  width: 18.4615em;
+}
+
+.yui-t5 #yui-main .yui-b {
+  margin-right: 19.4615em;
+}
+
+.yui-t6 .yui-b {
+  float: right;
+  width: 23.0769em;
+}
+
+.yui-t6 #yui-main .yui-b {
+  margin-right: 24.0769em;
+}
+
+.yui-t7 #yui-main .yui-b {
+  display: block;
+  margin: 0px 0px 1em;
+}
+
+#yui-main .yui-b {
+  float: none;
+  width: auto;
+}
+
+.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
+  float: left;
+}
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {
+  float: right;
+}
+
+.yui-g div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first, .yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-gc div.first div.first {
+  float: left;
+}
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {
+  width: 49.1%;
+}
+
+.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
+  width: 32%;
+  margin-left: 1.99%;
+}
+
+.yui-gb .yui-u {
+}
+
+.yui-gc div.first, .yui-gd .yui-u {
+  width: 66%;
+}
+
+.yui-gd div.first {
+  width: 32%;
+}
+
+.yui-ge div.first, .yui-gf .yui-u {
+  width: 74.2%;
+}
+
+.yui-ge .yui-u, .yui-gf div.first {
+  width: 24%;
+}
+
+.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {
+  margin-left: 0px;
+}
+
+.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {
+  width: 49%;
+}
+
+.yui-g .yui-g .yui-u {
+  width: 48.1%;
+}
+
+.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {
+}
+
+.yui-g .yui-gc div.first, .yui-gd .yui-g {
+  width: 66%;
+}
+
+.yui-gb .yui-g div.first {
+}
+
+.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {
+}
+
+.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {
+}
+
+.yui-g .yui-gb .yui-u {
+}
+
+.yui-gb .yui-gd .yui-u {
+}
+
+.yui-gb .yui-gd div.first {
+}
+
+.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {
+  width: 32%;
+  margin-right: 0px;
+}
+
+.yui-gb .yui-gc div.first {
+  width: 66%;
+}
+
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {
+  margin: 0px;
+}
+
+.yui-gb .yui-gb .yui-u {
+}
+
+.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {
+}
+
+.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {
+}
+
+.yui-gb .yui-gd div.first {
+  width: 32%;
+}
+
+.yui-g .yui-gd div.first {
+}
+
+.yui-ge .yui-g {
+  width: 24%;
+}
+
+.yui-gf .yui-g {
+  width: 74.2%;
+}
+
+.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {
+  float: right;
+}
+
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {
+  float: left;
+}
+
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {
+}
+
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {
+}
+
+.yui-ge div.first .yui-gd .yui-u {
+  width: 65%;
+}
+
+.yui-ge div.first .yui-gd div.first {
+  width: 32%;
+}
+
+#bd::after, .yui-g::after, .yui-gb::after, .yui-gc::after, .yui-gd::after, .yui-ge::after, .yui-gf::after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+}
+
+:link {
+  color: #000099;
+  text-decoration: none;
+}
+
+:link:active {
+  color: #cc0000;
+}
+
+:link:visited {
+  color: #cc33cc;
+}
+
+</style><style type="text/css">/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
+</style><meta name="author" content="sarojb">
+    <meta name="description" content="Making Free Money">
+    <meta name="generator" content="BlueGriffon wysiwyg editor">
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <div id="doc2" class="yui-t7">
+      <div id="hd">
+        <h1 style="text-align: center;">MoneyAdda</h1>
+        <p style="text-align: center;">Daily updated free money making reference
+          site</p>
+      </div>
+      <div id="bd">
+        <div class="yui-g">
+          <div class="yui-u first" style="text-align: justify;">
+            <p>Welcome to moneyAdda. The place to find all the hot and high
+              paying crypto faucets and other ways to earn money free online.</p>
+            <p>Bookmark us as we regularly update the site with new and hot ways
+              to earn money. </p>
+            <p>All of our links opens in a new tab. </p>
+            <p>You would need to make an account on these microwallets for
+              starting to get paid from most of the faucets.</p>
+            <p><a href="https://expresscrypto.io/signup?referral=9211" target="_blank">ExpressCrytpo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://faucetpay.io/?r=2516" target="_blank">FaucetPay</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://payeer.com/?session=19596306" target="_blank">Payeer</a></p>
+          </div>
+          <div class="yui-u">
+            <p class="zmup-email " style="text-align: justify;">We actively
+              remove scams and sites that don't pay. And add new that pays good.
+              If you found some non paying sites or want to add a paying site,
+              contact us at<span> <a href="mailto:moneyadda@zohomail.com" target="_blank">moneyadda@zohomail.com</a></span></p>
+            <p class="zmup-email " style="text-align: justify;"><span>We may
+                reward the users by hosting their ref link for providing us
+                quick information about non paying and new and paying sites. The
+                final discretion about rewards would be done by us. <br>
+              </span></p>
+            <p class="zmup-email " style="text-align: justify;"><span>(Effective
+                from July 1st, 2021)<br>
+              </span></p>
+            <p><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="ft">
+        <p>2021@MoneyAdda</p>
+      </div>
+    </div>
+  </body>
 </html>
