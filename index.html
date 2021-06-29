@@ -1,427 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Moneyadda</title>
-    <style type="text/css">
-html {
-  color: black;
-  background: #ffffcc none repeat scroll 0% 0%;
-}
-
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
-  margin: 0px;
-  padding: 0px;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0px;
-}
-
-fieldset, img {
-  border: 0px none;
-}
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-li {
-  list-style: outside none none;
-}
-
-caption, th {
-  text-align: left;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-q::before, q::after {
-  content: "";
-}
-
-abbr, acronym {
-  border: 0px none;
-  font-variant: normal;
-}
-
-sup {
-  vertical-align: text-top;
-}
-
-sub {
-  vertical-align: text-bottom;
-}
-
-input, textarea, select {
-}
-
-input, textarea, select {
-}
-
-legend {
-  color: black;
-}
-
-del, ins {
-  text-decoration: none;
-}
-
-body {
-  font: 15px / 1.231 arial helvetica clean sans-serif;
-}
-
-select, input, button, textarea {
-  font: 99% arial helvetica clean sans-serif;
-}
-
-table {
-}
-
-pre, code, kbd, samp, tt {
-  font-family: monospace;
-  line-height: 100%;
-}
-
-body {
-  text-align: center;
-  background-color: #ffffcc;
-  color: black;
-}
-
-#ft {
-  clear: both;
-}
-
-#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {
-  margin: auto;
-  text-align: left;
-  width: 57.69em;
-  min-width: 750px;
-}
-
-#doc2 {
-  width: 73.076em;
-}
-
-#doc3 {
-  margin: auto 10px;
-  width: auto;
-}
-
-#doc4 {
-  width: 74.923em;
-}
-
-.yui-b {
-  position: relative;
-}
-
-.yui-b {
-}
-
-#yui-main .yui-b {
-  position: static;
-}
-
-#yui-main, .yui-g .yui-u .yui-g {
-  width: 100%;
-}
-
-.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {
-  float: right;
-  margin-left: -25em;
-}
-
-.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
-  float: left;
-  margin-right: -25em;
-}
-
-.yui-t1 .yui-b {
-  float: left;
-  width: 12.3077em;
-}
-
-.yui-t1 #yui-main .yui-b {
-  margin-left: 13.3077em;
-}
-
-.yui-t2 .yui-b {
-  float: left;
-  width: 13.8461em;
-}
-
-.yui-t2 #yui-main .yui-b {
-  margin-left: 14.8461em;
-}
-
-.yui-t3 .yui-b {
-  float: left;
-  width: 23.0769em;
-}
-
-.yui-t3 #yui-main .yui-b {
-  margin-left: 24.0769em;
-}
-
-.yui-t4 .yui-b {
-  float: right;
-  width: 13.8456em;
-}
-
-.yui-t4 #yui-main .yui-b {
-  margin-right: 14.8456em;
-}
-
-.yui-t5 .yui-b {
-  float: right;
-  width: 18.4615em;
-}
-
-.yui-t5 #yui-main .yui-b {
-  margin-right: 19.4615em;
-}
-
-.yui-t6 .yui-b {
-  float: right;
-  width: 23.0769em;
-}
-
-.yui-t6 #yui-main .yui-b {
-  margin-right: 24.0769em;
-}
-
-.yui-t7 #yui-main .yui-b {
-  display: block;
-  margin: 0px 0px 1em;
-}
-
-#yui-main .yui-b {
-  float: none;
-  width: auto;
-}
-
-.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
-  float: left;
-}
-
-.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {
-  float: right;
-}
-
-.yui-g div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first, .yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-gc div.first div.first {
-  float: left;
-}
-
-.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {
-  width: 49.1%;
-}
-
-.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
-  width: 32%;
-  margin-left: 1.99%;
-}
-
-.yui-gb .yui-u {
-}
-
-.yui-gc div.first, .yui-gd .yui-u {
-  width: 66%;
-}
-
-.yui-gd div.first {
-  width: 32%;
-}
-
-.yui-ge div.first, .yui-gf .yui-u {
-  width: 74.2%;
-}
-
-.yui-ge .yui-u, .yui-gf div.first {
-  width: 24%;
-}
-
-.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {
-  margin-left: 0px;
-}
-
-.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {
-  width: 49%;
-}
-
-.yui-g .yui-g .yui-u {
-  width: 48.1%;
-}
-
-.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {
-}
-
-.yui-g .yui-gc div.first, .yui-gd .yui-g {
-  width: 66%;
-}
-
-.yui-gb .yui-g div.first {
-}
-
-.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {
-}
-
-.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {
-}
-
-.yui-g .yui-gb .yui-u {
-}
-
-.yui-gb .yui-gd .yui-u {
-}
-
-.yui-gb .yui-gd div.first {
-}
-
-.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {
-  width: 32%;
-  margin-right: 0px;
-}
-
-.yui-gb .yui-gc div.first {
-  width: 66%;
-}
-
-.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {
-  margin: 0px;
-}
-
-.yui-gb .yui-gb .yui-u {
-}
-
-.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {
-}
-
-.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {
-}
-
-.yui-gb .yui-gd div.first {
-  width: 32%;
-}
-
-.yui-g .yui-gd div.first {
-}
-
-.yui-ge .yui-g {
-  width: 24%;
-}
-
-.yui-gf .yui-g {
-  width: 74.2%;
-}
-
-.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {
-  float: right;
-}
-
-.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {
-  float: left;
-}
-
-.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {
-}
-
-.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {
-}
-
-.yui-ge div.first .yui-gd .yui-u {
-  width: 65%;
-}
-
-.yui-ge div.first .yui-gd div.first {
-  width: 32%;
-}
-
-#bd::after, .yui-g::after, .yui-gb::after, .yui-gc::after, .yui-gd::after, .yui-ge::after, .yui-gf::after {
-  content: ".";
-  display: block;
-  height: 0px;
-  clear: both;
-  visibility: hidden;
-}
-
-#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
-}
-
-:link {
-  color: #000099;
-  text-decoration: none;
-}
-
-:link:active {
-  color: #cc0000;
-}
-
-:link:visited {
-  color: #cc33cc;
-}
-
-</style><style type="text/css">/*
-Copyright (c) 2008, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.net/yui/license.txt
-version: 2.6.0
-*/
-h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
-</style><meta name="author" content="sarojb">
-    <meta name="description" content="Making Free Money">
-    <meta name="generator" content="BlueGriffon wysiwyg editor">
-    <style type="text/css"></style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style> body {bg-coloar: aqua; max-width: 1000px; margin: auto}</style>
   </head>
   <body>
-    <div id="doc2" class="yui-t7">
-      <div id="hd">
-        <h1 style="text-align: center;">MoneyAdda</h1>
-        <p style="text-align: center;">Daily updated free money making reference
-          site</p>
-      </div>
-      <div id="bd" style="margin-left: 50px; width: 850px;">
-        <div class="yui-g">
-          <div class="yui-u first" style="text-align: justify;">
-            <p>Welcome to moneyAdda. The place to find all the hot and high
-              paying crypto faucets and other ways to earn money free online.</p>
-            <p>Bookmark us as we regularly update the site with new and hot ways
-              to earn money. </p>
-            <p>All of our links opens in a new tab. </p>
-            <p>You would need to make an account on these microwallets for
-              starting to get paid from most of the faucets.</p>
-            <p><a href="https://expresscrypto.io/signup?referral=9211" target="_blank">ExpressCrytpo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://faucetpay.io/?r=2516" target="_blank">FaucetPay</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://payeer.com/?session=19596306" target="_blank">Payeer</a></p>
-          </div>
-          <div class="yui-u">
-            <p class="zmup-email " style="text-align: justify;">We actively
-              remove scams and sites that don't pay. And add new that pays good.
-              If you found some non paying sites or want to add a paying site,
-              contact us at<span> <a href="mailto:moneyadda@zohomail.com" target="_blank">moneyadda@zohomail.com</a></span></p>
-            <p class="zmup-email " style="text-align: justify;"><span>We may
-                reward the users by hosting their ref link for providing us
-                quick information about non paying and new and paying sites. The
-                final discretion about rewards would be done by us. <br>
-              </span></p>
-            <p class="zmup-email " style="text-align: justify;"><span>(Effective
-                from July 1st, 2021)<br>
-              </span></p>
-            <p><br>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="ft">
-        <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-          2021@MoneyAdda</p>
-      </div>
-    </div>
+    <p></p>
+    <h2 style="text-align: center;"><span style="background-color: #008000; color: #ffff00;"><strong>Top
+          5 Crypto earning sites</strong></span></h2>
+    <p style="text-align: center;">(Opens in new tab)</p>
+    <p style="text-align: center;"><a href="https://faucetcrypto.com/ref/51422"
+        target="_blank"><span style="color: #000080;"><strong>1. FaucetCrypto -
+            25 min faucet, Daily login reward, PTC, shortlinks, offerwalls,
+            multiple coins, low minimum payout to FaucetPay or direct to wallet.</strong>
+        </span></a></p>
+    <p style="text-align: center;"><a href="https://firefaucet.win/ref/27478" target="_blank"><span
+          style="background-color: #ffffff; color: #000080;"><strong>2.
+            FireFaucet - 30 min faucet, Daily login reward, PTC, shortlinks,
+            offerwalls, tasks, Multiple coins, a bit higher payout direct to
+            wallet but good earnings specially in happy hours. </strong></span></a></p>
+    <p style="text-align: center;"><a href="https://autofaucet.dutchycorp.space/?r=tsaroz"
+        target="_blank"><span style="background-color: #ffffff; color: #000080;"><strong>3.
+            Dutchycorp - Two 30 mins faucets, PTC, shortlinks, offerwalls, 40+
+            coins, paymet to faucetpay, expresscrypto or direct to wallet. 20%
+            More earning on weekends.</strong></span></a></p>
+    <p style="text-align: center;"><a href="https://simplebits.io/ref/n9Z908pvlxST"
+        target="_blank"><span style="background-color: #ffffff; color: #000080;"><strong>4.
+            Simplebits - 30 mins faucet, PTC, shortlink, mining simulation game
+            whose reward makes you earn more. Multiple coins. A bit higher
+            minimum payout. Pays directly to wallet.</strong></span></a></p>
+    <p style="text-align: center;"><a href="https://r.adbtc.top/7297" target="_blank"><span
+          style="background-color: #ffffff; color: #000080;"><strong>5. Adbtc -
+            Highest paying bitcoin PTC, a lot of ads above 10 satoshis daily.
+            Payout to Faucetpay, expersscrypto or direct.</strong></span></a></p>
+    <h2 style="text-align: center;"><span style="background-color: #008000; color: #ffff00;"><strong>Top
+          5 Russia sites for passive Ruble earning<br>
+        </strong></span></h2>
+    <p style="text-align: center;"><span style="background-color: #ffffff; color: #000000;">(Only
+        free sites, no investment required, don't invest, just withdraw as free
+        users, stop using if asks to invest, use google translate if needed,
+        opens in new tab)</span></p>
+    <p style="text-align: center;"><a href="https://payeer.com/?session=19596306"
+        target="_blank"><span style="background-color: #ffffff; color: #000000;">First
+          make an account on Payeer</span></a></p>
+    <p style="text-align: center;"><span style="background-color: #ffffff; color: #000000;"><a
+          href="take%20daily%20and%20hourly%20bonus," target="_blank">1. Plane
+          money - Buy planes with registration bonus, claim passive income when
+          you want, take daily and hourly bonus for more earnings. Minimum
+          withdraw 1 Ruble.</a> </span></p>
+    <p style="text-align: center;"><a href="https://money-frogs.biz/?i=7474" target="_blank"><span
+          style="background-color: #ffffff; color: #000000;">2. Money frog - Buy
+          frogs with registration bonus, claim passive income when you want,
+          take daily and hourly bonus for more earnigs. Minimum withdraw 1
+          Ruble.</span></a></p>
+    <p style="text-align: center;"><a href="https://drakon-farm.ru/?i=3302" target="_blank"><span
+          style="background-color: #ffffff; color: #000000;">3. Drakon Farm -
+          Buy characters with registration bonus, claim passive income when you
+          want, take daily and hourly bonus for more earnings. Minimum withdraw
+          1 Ruble.</span></a></p>
+    <p style="text-align: center;"><a href="https://apteka-money.ru/?i=30802" target="_blank"><span
+          style="background-color: #ffffff; color: #000000;">4. Apteka money -
+          Buy pharmacy with registration bonus, claim passive income when you
+          want, take daily and hourly bonus for more earnings. Minimum withdraw
+          1 Ruble.</span></a></p>
+    <h2 style="text-align: center;"><span style="background-color: #008000; color: #ffff00;"><strong>Bonus
+          Passive earning site<br>
+        </strong></span></h2>
+    <p><span style="background-color: #ffffff; color: #000000;">Ltcminer.com is
+        providing free 0.0006 LTC daily for free. Just put your email and LTC
+        address that can accept small payments (Binance wallet address don't
+        work). Don't invest in this site, just use till you get free payment.
+        You won't get your money back if invested.<br>
+      </span></p>
+    <h3><span style="color: #ff0000;"><strong><span style="background-color: #ffffff;">Bookmark
+            this site as I keep on updating the content.</span></strong></span></h3>
+    <p><span style="color: #008000;"><a style="color: #008000;" href="https://expresscrypto.io/signup?referral=9211"
+          target="_blank"><strong><span style="background-color: #ffffff;">Join
+              ExpressCrypto<br>
+            </span></strong></a></span></p>
+    <p><span style="color: #008000;"><a style="color: #008000;" href="https://faucetpay.io/?r=2516"
+          target="_blank"><strong><span style="background-color: #ffffff;">Join
+              FaucetPay<br>
+            </span></strong></a></span></p>
+    <p><span style="color: #008000;"><a style="color: #008000;" href="https://www.kucoin.com/ucenter/signup?rcode=E3ho3-"
+          target="_blank"><strong><span style="background-color: #ffffff;">Join
+              Kucoin (Exchange/wallet)<br>
+            </span></strong></a></span></p>
+    <p><span style="color: #008000;"><a style="color: #008000;" href="https://www.binance.com/en/register?ref=10209865"
+          target="_blank"><strong><span style="background-color: #ffffff;">Join
+              Binance<br>
+            </span></strong></a></span></p>
+    <br>
+    <p></p>
+    
   </body>
 </html>
